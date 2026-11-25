@@ -1,0 +1,8 @@
+{
+  "name": "AssignAI — Student Assignment Manager",
+  "description": "AI-powered student assignment manager for tracking academic deadlines, subjects, progress analytics, and personalized study assistance with Gemini.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

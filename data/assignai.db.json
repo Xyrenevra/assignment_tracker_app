@@ -1,0 +1,436 @@
+{
+  "users": [
+    {
+      "id": "usr_demo_aarav",
+      "name": "Aarav Sharma",
+      "email": "demo@assignai.edu",
+      "passwordHash": "scrypt$121b131be9a66977f43954e2555e896a$34933144ef3a2f3eedbf023d43219e870a2f3625d64c806cfbc635cd75476efd31445975ccb240f6685b9df5fe7218d4f00a52f9d7114f10d470392d6beae542",
+      "university": "National Institute of Technology",
+      "major": "B.Tech Computer Science & Engineering",
+      "semester": "Semester 5",
+      "bio": "Focusing on systems engineering, applied Python, and distributed networks.",
+      "isDemo": true,
+      "preferences": {
+        "theme": "light",
+        "reminderDays": 3,
+        "overdueAlerts": true,
+        "shareAiContextByDefault": true
+      },
+      "createdAt": "2026-11-03T09:00:00.000Z",
+      "updatedAt": "2026-11-24T17:37:11.998Z"
+    },
+    {
+      "id": "usr_b33348bf-3aa",
+      "name": "Meera Nair",
+      "email": "student_1795541832456@university.edu",
+      "passwordHash": "scrypt$ca9b1ee578a06a38e1ad722f34784d2a$f23762fde2c05adb58276b9968ee237dff8ce70be0799f681198cf607d3beed012ecbae4a019fbbbe1644fa555df82468f873d8f21473c55140105310f1b4f08",
+      "university": "",
+      "major": "",
+      "semester": "",
+      "bio": "",
+      "isDemo": false,
+      "preferences": {
+        "theme": "light",
+        "reminderDays": 3,
+        "overdueAlerts": true,
+        "shareAiContextByDefault": true
+      },
+      "createdAt": "2026-11-24T17:37:12.585Z",
+      "updatedAt": "2026-11-24T17:37:12.585Z"
+    }
+  ],
+  "subjects": [
+    {
+      "id": "sub_py",
+      "userId": "usr_demo_aarav",
+      "subjectName": "Advanced Python",
+      "subjectCode": "CS301",
+      "color": "#6366F1",
+      "createdAt": "2026-11-04T18:00:00.000Z"
+    },
+    {
+      "id": "sub_os",
+      "userId": "usr_demo_aarav",
+      "subjectName": "Operating Systems",
+      "subjectCode": "CS304",
+      "color": "#8B5CF6",
+      "createdAt": "2026-11-04T18:00:00.000Z"
+    },
+    {
+      "id": "sub_cn",
+      "userId": "usr_demo_aarav",
+      "subjectName": "Computer Networks",
+      "subjectCode": "CS307",
+      "color": "#0EA5E9",
+      "createdAt": "2026-11-04T18:00:00.000Z"
+    },
+    {
+      "id": "sub_se",
+      "userId": "usr_demo_aarav",
+      "subjectName": "Software Engineering",
+      "subjectCode": "CS312",
+      "color": "#10B981",
+      "createdAt": "2026-11-04T18:00:00.000Z"
+    },
+    {
+      "id": "sub_ma",
+      "userId": "usr_demo_aarav",
+      "subjectName": "Mathematics",
+      "subjectCode": "MA205",
+      "color": "#F59E0B",
+      "createdAt": "2026-11-04T18:00:00.000Z"
+    },
+    {
+      "id": "sub_db",
+      "userId": "usr_demo_aarav",
+      "subjectName": "Database Management Systems",
+      "subjectCode": "CS309",
+      "color": "#EC4899",
+      "createdAt": "2026-11-04T18:00:00.000Z"
+    }
+  ],
+  "assignments": [
+    {
+      "id": "asg_1",
+      "userId": "usr_demo_aarav",
+      "subjectId": "sub_py",
+      "title": "NumPy Broadcasting & Vectorized Matrix Ops Lab",
+      "description": "Implement batched cosine similarity and image convolution kernels using pure NumPy broadcasting without Python for-loops. Benchmark against iterative implementations and submit a Jupyter report.",
+      "dueDate": "2026-11-22T23:59:00.000Z",
+      "priority": "High",
+      "status": "In Progress",
+      "subtasks": [
+        {
+          "id": "st_1",
+          "title": "Write vectorized cosine similarity function",
+          "completed": true
+        },
+        {
+          "id": "st_2",
+          "title": "Implement 2D sliding window stride trick",
+          "completed": false
+        },
+        {
+          "id": "st_3",
+          "title": "Plot runtime benchmarks for 1k to 100k rows",
+          "completed": false
+        }
+      ],
+      "completedAt": null,
+      "createdAt": "2026-11-18T10:15:00.000Z",
+      "updatedAt": "2026-11-23T14:00:00.000Z"
+    },
+    {
+      "id": "asg_2",
+      "userId": "usr_demo_aarav",
+      "subjectId": "sub_os",
+      "title": "Multilevel Feedback Queue CPU Scheduler Simulation",
+      "description": "Build a discrete-event simulator comparing Round Robin, Shortest Remaining Time First, and 3-tier MLFQ scheduling algorithms. Report average turnaround time, waiting time, and starvation edge cases.",
+      "dueDate": "2026-11-24T23:30:00.000Z",
+      "priority": "High",
+      "status": "In Progress",
+      "subtasks": [
+        {
+          "id": "st_4",
+          "title": "Parse process arrival trace CSV",
+          "completed": true
+        },
+        {
+          "id": "st_5",
+          "title": "Implement aging boost for Queue 3",
+          "completed": true
+        },
+        {
+          "id": "st_6",
+          "title": "Write Gantt chart & metrics summary",
+          "completed": false
+        }
+      ],
+      "completedAt": null,
+      "createdAt": "2026-11-19T11:00:00.000Z",
+      "updatedAt": "2026-11-24T08:30:00.000Z"
+    },
+    {
+      "id": "asg_3",
+      "userId": "usr_demo_aarav",
+      "subjectId": "sub_db",
+      "title": "B+ Tree Indexing & Query Execution Plan Analysis",
+      "description": "Analyze PostgreSQL EXPLAIN ANALYZE outputs across unindexed, B-Tree indexed, and composite-indexed schemas on a 500k-row university enrollment dataset. Explain page I/O differences.",
+      "dueDate": "2026-11-25T18:00:00.000Z",
+      "priority": "High",
+      "status": "Pending",
+      "subtasks": [
+        {
+          "id": "st_7",
+          "title": "Generate 500k synthetic enrollment records",
+          "completed": false
+        },
+        {
+          "id": "st_8",
+          "title": "Compare sequential scan vs index-only scan",
+          "completed": false
+        }
+      ],
+      "completedAt": null,
+      "createdAt": "2026-11-20T15:20:00.000Z",
+      "updatedAt": "2026-11-20T15:20:00.000Z"
+    },
+    {
+      "id": "asg_4",
+      "userId": "usr_demo_aarav",
+      "subjectId": "sub_cn",
+      "title": "TCP Congestion Control & Wireshark Packet Trace",
+      "description": "Capture and annotate TCP three-way handshake, slow start, fast retransmit, and AIMD window scaling from a simulated lossy link using Wireshark filters.",
+      "dueDate": "2026-11-27T21:00:00.000Z",
+      "priority": "Medium",
+      "status": "Pending",
+      "subtasks": [
+        {
+          "id": "st_9",
+          "title": "Record 2-minute pcap trace over throttled loopback",
+          "completed": true
+        },
+        {
+          "id": "st_10",
+          "title": "Annotate cwnd drop and triple duplicate ACK frames",
+          "completed": false
+        }
+      ],
+      "completedAt": null,
+      "createdAt": "2026-11-21T09:45:00.000Z",
+      "updatedAt": "2026-11-22T16:00:00.000Z"
+    },
+    {
+      "id": "asg_5",
+      "userId": "usr_demo_aarav",
+      "subjectId": "sub_se",
+      "title": "UML Component Architecture & SRS Specification",
+      "description": "Draft IEEE-830 compliant Software Requirements Specification including functional requirements, sequence diagrams, and risk mitigation matrix for the semester capstone.",
+      "dueDate": "2026-11-29T17:00:00.000Z",
+      "priority": "Medium",
+      "status": "In Progress",
+      "subtasks": [
+        {
+          "id": "st_11",
+          "title": "Complete functional & non-functional requirements",
+          "completed": true
+        },
+        {
+          "id": "st_12",
+          "title": "Draw authentication sequence diagram",
+          "completed": false
+        }
+      ],
+      "completedAt": null,
+      "createdAt": "2026-11-22T13:10:00.000Z",
+      "updatedAt": "2026-11-23T11:00:00.000Z"
+    },
+    {
+      "id": "asg_6",
+      "userId": "usr_demo_aarav",
+      "subjectId": "sub_ma",
+      "title": "Eigenvalues, SVD & Principal Component Analysis Problem Set",
+      "description": "Solve 8 analytical problems on orthogonal diagonalization, Singular Value Decomposition proofs, and low-rank matrix approximation error bounds.",
+      "dueDate": "2026-11-23T17:00:00.000Z",
+      "priority": "Medium",
+      "status": "Pending",
+      "subtasks": [
+        {
+          "id": "st_13",
+          "title": "Complete Questions 1–4 (characteristic polynomials)",
+          "completed": true
+        },
+        {
+          "id": "st_14",
+          "title": "Finish Questions 5–8 (Eckart-Young theorem)",
+          "completed": false
+        }
+      ],
+      "completedAt": null,
+      "createdAt": "2026-11-18T16:00:00.000Z",
+      "updatedAt": "2026-11-22T19:00:00.000Z"
+    },
+    {
+      "id": "asg_7",
+      "userId": "usr_demo_aarav",
+      "subjectId": "sub_py",
+      "title": "AsyncIO Concurrent Web Scraper & Rate Limiter",
+      "description": "Build an asynchronous HTTP fetcher using asyncio.Semaphore and aiohttp with graceful timeout handling and structured JSON export.",
+      "dueDate": "2026-11-21T20:00:00.000Z",
+      "priority": "High",
+      "status": "Completed",
+      "subtasks": [
+        {
+          "id": "st_15",
+          "title": "Implement token-bucket rate limiter",
+          "completed": true
+        },
+        {
+          "id": "st_16",
+          "title": "Add unit tests with mocked responses",
+          "completed": true
+        }
+      ],
+      "completedAt": "2026-11-20T19:15:00.000Z",
+      "createdAt": "2026-11-14T10:00:00.000Z",
+      "updatedAt": "2026-11-20T19:15:00.000Z"
+    },
+    {
+      "id": "asg_8",
+      "userId": "usr_demo_aarav",
+      "subjectId": "sub_db",
+      "title": "Third Normal Form (3NF) & BCNF Schema Normalization",
+      "description": "Normalize an unnormalized hospital billing ledger through 1NF, 2NF, 3NF, and BCNF while verifying lossless join and dependency preservation.",
+      "dueDate": "2026-11-22T18:00:00.000Z",
+      "priority": "Medium",
+      "status": "Completed",
+      "subtasks": [
+        {
+          "id": "st_17",
+          "title": "Identify all candidate keys and functional dependencies",
+          "completed": true
+        },
+        {
+          "id": "st_18",
+          "title": "Verify lossless decomposition via chase test",
+          "completed": true
+        }
+      ],
+      "completedAt": "2026-11-21T15:30:00.000Z",
+      "createdAt": "2026-11-15T14:00:00.000Z",
+      "updatedAt": "2026-11-21T15:30:00.000Z"
+    },
+    {
+      "id": "asg_9",
+      "userId": "usr_demo_aarav",
+      "subjectId": "sub_os",
+      "title": "POSIX Threads Producer-Consumer Synchronization Lab",
+      "description": "Implement a bounded ring buffer in C using pthread_mutex_t and condition variables without deadlocks or busy-waiting.",
+      "dueDate": "2026-11-19T18:00:00.000Z",
+      "priority": "High",
+      "status": "Completed",
+      "subtasks": [],
+      "completedAt": "2026-11-20T10:00:00.000Z",
+      "createdAt": "2026-11-12T09:00:00.000Z",
+      "updatedAt": "2026-11-20T10:00:00.000Z"
+    },
+    {
+      "id": "asg_10",
+      "userId": "usr_demo_aarav",
+      "subjectId": "sub_cn",
+      "title": "CIDR Subnetting & VLSM Addressing Worksheet",
+      "description": "Design a campus IPv4 addressing plan for 6 departments with varying host counts while minimizing wasted address space.",
+      "dueDate": "2026-11-23T20:00:00.000Z",
+      "priority": "Low",
+      "status": "Completed",
+      "subtasks": [],
+      "completedAt": "2026-11-23T16:40:00.000Z",
+      "createdAt": "2026-11-19T12:00:00.000Z",
+      "updatedAt": "2026-11-23T16:40:00.000Z"
+    },
+    {
+      "id": "asg_11",
+      "userId": "usr_demo_aarav",
+      "subjectId": "sub_se",
+      "title": "Automated Unit Testing & CI Pipeline Proposal",
+      "description": "Write a short architectural brief recommending branch protection, automated linting, and integration test stages for a team repository.",
+      "dueDate": "2026-12-02T18:00:00.000Z",
+      "priority": "Low",
+      "status": "Pending",
+      "subtasks": [],
+      "completedAt": null,
+      "createdAt": "2026-11-23T09:00:00.000Z",
+      "updatedAt": "2026-11-23T09:00:00.000Z"
+    },
+    {
+      "id": "asg_12",
+      "userId": "usr_demo_aarav",
+      "subjectId": "sub_ma",
+      "title": "Bayesian Inference & Hypothesis Testing Quiz Prep",
+      "description": "Complete practice derivations for conjugate priors, posterior predictive intervals, and Type I / Type II error trade-offs.",
+      "dueDate": "2026-11-24T19:00:00.000Z",
+      "priority": "Low",
+      "status": "Completed",
+      "subtasks": [],
+      "completedAt": "2026-11-24T09:20:00.000Z",
+      "createdAt": "2026-11-21T17:00:00.000Z",
+      "updatedAt": "2026-11-24T09:20:00.000Z"
+    }
+  ],
+  "chatConversations": [
+    {
+      "id": "conv_7e873d26-32c",
+      "userId": "usr_demo_aarav",
+      "title": "What assignments should I complete first?",
+      "assignmentId": null,
+      "createdAt": "2026-11-24T17:31:17.557Z",
+      "updatedAt": "2026-11-24T17:31:30.749Z"
+    }
+  ],
+  "chatMessages": [
+    {
+      "id": "msg_a5c10667-167",
+      "userId": "usr_demo_aarav",
+      "conversationId": "conv_7e873d26-32c",
+      "role": "user",
+      "message": "What assignments should I complete first?",
+      "timestamp": "2026-11-24T17:31:17.558Z"
+    },
+    {
+      "id": "msg_6eab6350-561",
+      "userId": "usr_demo_aarav",
+      "conversationId": "conv_7e873d26-32c",
+      "role": "assistant",
+      "message": "You currently have **7 active assignments** (5 are already completed—nice work staying ahead on those!). Based on **overdue status, deadline urgency, priority, and how close you are to finishing**, here is the exact order you should tackle them:\n\n---\n\n### Prioritized Action Order\n\n| Order | Assignment | Course | Priority | Status & Deadline | Progress | Why This Order |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| **1** | **Multilevel Feedback Queue CPU Scheduler Simulation** | Operating Systems | **High** | **Due Today (Nov 24)** | 2/3 subtasks | Nearly finished and due tonight—wrap up the final subtask first to avoid another overdue item. |\n| **2** | **NumPy Broadcasting & Vectorized Matrix Ops Lab** | Advanced Python | **High** | **Overdue 2 days (Nov 22)** | 1/3 subtasks | Highest urgency overdue task (High priority, 2 days late). Finish and submit today to stop late penalties from growing. |\n| **3** | **Eigenvalues, SVD & Principal Component Analysis Problem Set** | Mathematics | **Medium** | **Overdue 1 day (Nov 23)** | 1/2 subtasks | Halfway done and 1 day overdue. Clear this tonight or early tomorrow morning. |\n| **4** | **B+ Tree Indexing & Query Execution Plan Analysis** | DBMS | **High** | **Due Tomorrow (Nov 25)** | 0/2 subtasks | High priority and hasn't been started yet—begin setup/queries tonight and finish tomorrow. |\n| **5** | **TCP Congestion Control & Wireshark Packet Trace** | Computer Networks | Medium | Due in 3 days (Nov 27) | 1/2 subtasks | Half done; schedule for Nov 26 after clearing the urgent queue. |\n| **6** | **UML Component Architecture & SRS Specification** | Software Engineering | Medium | Due in 5 days (Nov 29) | 1/2 subtasks | Half done; tackle Nov 27–28. |\n| **7** | **Automated Unit Testing & CI Pipeline Proposal** | Software Engineering | Low | Due in 8 days (Dec 2) | 0 subtasks | Low priority with plenty of buffer; handle Nov 29–Dec 1. |\n\n---\n\n### Recommended Game Plan for Today (Tue, Nov 24) & Tomorrow (Wed, Nov 25)\n\n1. **Right Now — Finish the OS Scheduler Simulation:** Since you're already at **2/3 subtasks**, finish your final comparison/report section and submit before tonight's deadline.\n2. **Next Today — Complete the Overdue NumPy Lab:** Knock out the remaining 2 subtasks (vectorized kernels/benchmarking + submission) so all High-priority overdue work is off your plate.\n3. **Tonight / Early Tomorrow — Clear the SVD Problem Set & Start DBMS:** Finish the remaining half of your Math problem set, and at least initialize the 500k-row PostgreSQL schema and run your first `EXPLAIN ANALYZE` queries before going to sleep so tomorrow's **B+ Tree Indexing** deadline stays stress-free.\n\nWould you like help finishing the final subtask on the **MLFQ CPU Scheduler**, debugging **NumPy broadcasting**, or setting up a **day-by-day schedule** for the rest of the week?",
+      "model": "gemini-4-hydrogen",
+      "timestamp": "2026-11-24T17:31:30.749Z"
+    }
+  ],
+  "notifications": [
+    {
+      "userId": "usr_demo_aarav",
+      "assignmentId": "asg_1",
+      "type": "overdue",
+      "message": "\"NumPy Broadcasting & Vectorized Matrix Ops Lab\" is overdue by 2 days. Prioritize submitting it soon.",
+      "readStatus": false,
+      "id": "ntf_a05ddac6-879",
+      "createdAt": "2026-11-24T17:10:33.508Z"
+    },
+    {
+      "userId": "usr_demo_aarav",
+      "assignmentId": "asg_2",
+      "type": "upcoming",
+      "message": "Upcoming deadline: \"Multilevel Feedback Queue CPU Scheduler Simulation\" is due today.",
+      "readStatus": false,
+      "id": "ntf_46d98fe7-9bb",
+      "createdAt": "2026-11-24T17:10:33.508Z"
+    },
+    {
+      "userId": "usr_demo_aarav",
+      "assignmentId": "asg_3",
+      "type": "upcoming",
+      "message": "Upcoming deadline: \"B+ Tree Indexing & Query Execution Plan Analysis\" is due tomorrow.",
+      "readStatus": false,
+      "id": "ntf_ea3a568d-8af",
+      "createdAt": "2026-11-24T17:10:33.508Z"
+    },
+    {
+      "userId": "usr_demo_aarav",
+      "assignmentId": "asg_4",
+      "type": "upcoming",
+      "message": "Upcoming deadline: \"TCP Congestion Control & Wireshark Packet Trace\" is due in 3 days.",
+      "readStatus": false,
+      "id": "ntf_ed13af53-72a",
+      "createdAt": "2026-11-24T17:10:33.508Z"
+    },
+    {
+      "userId": "usr_demo_aarav",
+      "assignmentId": "asg_6",
+      "type": "overdue",
+      "message": "\"Eigenvalues, SVD & Principal Component Analysis Problem Set\" is overdue by 1 day. Prioritize submitting it soon.",
+      "readStatus": false,
+      "id": "ntf_aaaaf079-2ab",
+      "createdAt": "2026-11-24T17:10:33.508Z"
+    }
+  ]
+}
